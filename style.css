@@ -1,0 +1,116 @@
+:root {
+  --color-light: #fff;
+  --color-dark: #141318;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  background-color: var(--color-light);
+}
+
+.navbar-brand,
+.nav-link,
+lead-text {
+  font-size: 1.6rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* overide bootstap styling */
+
+.text-light {
+  color: var(--color-light) !important;
+}
+
+.text-dark {
+  color: var(--color-dark) !important;
+}
+
+.bg-light {
+  background-color: var(--color-light) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-dark) !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.py-6 {
+  padding: 3.4rem;
+}
+
+.btn-primary {
+  background-color: var(--color-dark);
+  border: 0;
+  border-radius: 0;
+  font-size: 1.4rem;
+  padding: 0.5rem 2rem;
+  box-shadow: 8px 4px 14px #e9e9e9;
+}
+
+.btn-primary:hover {
+  background-color: rgb(255, 255, 255);
+  color: brown;
+  border: 0;
+  opacity: 0.9;
+  box-shadow: 3px 4px 14px #e1dbf7;
+}
+
+.carousel-item img {
+  height: 600px;
+}
+
+/* get the slider nav to show  ny the side */
+
+.carousel-indicators {
+  margin: 0;
+  display: block;
+  top: 50%;
+  right: 40px;
+  left: unset;
+  transform: translateY(-50%);
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.slide-number {
+  bottom: 20px;
+  right: 40px;
+  position: absolute;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .lead-text,
+  .btn-primary {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    position: relative;
+  }
+  .hero-content {
+    padding: 4rem 0;
+  }
+}
